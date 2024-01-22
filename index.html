@@ -7,7 +7,7 @@
 
     <link
       rel="shortcut icon"
-      href="./images/icon/favicon-2.png"
+      href="./assets/icon/favicon-2.png"
       type="image/x-icon"
     />
     <!-- Tailwind and daisyUI CDN -->
@@ -48,9 +48,9 @@
     </script>
   </head>
   <body>
-    <header class="container mx-auto font-manrope py-5">
+    <header class="container mx-auto font-manrope">
       <!-- Navigation Bar Section -->
-      <div>
+      <div class="py-5 lg:py-10">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -72,7 +72,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-72"
+                class="menu menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-72"
               >
                 <li class="hover:text-maincolor hover:font-bold">
                   <a>Home</a>
@@ -91,7 +91,8 @@
                 </li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl font-extrabold"
+            <a
+              class="btn btn-ghost text-xl lg:text-4xl font-extrabold px-0 lg:px-4 flex gap-0"
               >Hockey<span class="text-maincolor">’</span>s</a
             >
           </div>
@@ -141,7 +142,8 @@
               </svg>
             </div>
             <div id="nav-button">
-              <a class="btn bg-maincolor text-white font-bold text-xl px-4"
+              <a
+                class="btn bg-maincolor text-white font-bold text-base lg:text-xl px-4"
                 >Get Ticket</a
               >
             </div>
@@ -149,16 +151,120 @@
         </div>
       </div>
       <!-- Banner Section -->
-      <div>
-
+      <div class="mb-10 mx-2">
+        <div class="carousel w-full h-[220px] lg:h-[550px] relative">
+          <!-- Slide1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-[url('./assets/images/banner-1.png')] bg-cover bg-center rounded-xl"
+          >
+            <div
+              class="absolute flex gap-4 transform translate-x-1/2 right-1/2 bottom-5 lg:-translate-y-10 lg:left-10 lg:bottom-0 lg:translate-x-0"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- Slide2 -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[url('./assets/images/banner-2.jpg')] bg-cover bg-center rounded-xl"
+          >
+            <div
+              class="absolute flex gap-4 transform translate-x-1/2 right-1/2 bottom-5 lg:-translate-y-10 lg:left-10 lg:bottom-0 lg:translate-x-0"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- Slide3 -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[url('./assets/images/banner-3.jpg')] bg-cover bg-center rounded-xl"
+          >
+            <div
+              class="absolute flex gap-4 transform translate-x-1/2 right-1/2 bottom-5 lg:-translate-y-10 lg:left-10 lg:bottom-0 lg:translate-x-0"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- Slide4 -->
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[url('./assets/images/banner-4.jpg')] bg-cover bg-center rounded-xl"
+          >
+            <div
+              class="absolute flex gap-4 transform translate-x-1/2 right-1/2 bottom-5 lg:-translate-y-10 lg:left-10 lg:bottom-0 lg:translate-x-0"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] text-white border-none text-lg"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            class="p-8 bg-[#131318] rounded-xl text-white lg:absolute lg:w-[550px] right-8 bottom-8"
+          >
+            <h2 class="text-lg lg:text-2xl font-extrabold pb-4">
+              Meet all the heroes from the field
+            </h2>
+            <p class="text-sm lg:text-base opacity-60">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
+        <div class="p-8 bg-[#131318] rounded-xl text-white lg:hidden">
+          <h2 class="text-lg font-extrabold pb-4">
+            Meet all the heroes from the field
+          </h2>
+          <p class="text-sm opacity-60">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
       </div>
     </header>
 
     <main>
-
+      <!-- Professional Hockeys Club Section -->
+      <section>
+        
+      </section>
     </main>
     <footer>
-        
+      
     </footer>
   </body>
 </html>
